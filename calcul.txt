@@ -1,3 +1,4 @@
+EXERCICE 1:
 
 1)
 def suite(a, N):
@@ -53,3 +54,7 @@ x5: 10.5
 		
 		
 		Valeur approchée de √50 : 7.07106
+		
+EXERCICE 2:
+PARTIE I:
+1)
