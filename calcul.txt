@@ -1,1 +1,28 @@
-test
+PARTIE I:
+1)
+def suite(a, N):
+    x0 = a + 1
+    x = [x0]
+    
+    for n in range(N):
+        xn = (1/2) * (x[n] + a / x[n])
+        x.append(xn)
+    
+    return x
+	
+	
+2)a)
+a = 20
+N = 5  
+
+x_values = suite(a, N)
+
+for n, x in enumerate(x_values):
+    print(f"x{n}: {x}")
+	
+x0: 21
+x1: 11.619047619047619
+x2: 10.499508663874552
+x3: 10.499999046325682
+x4: 10.5
+x5: 10.5
