@@ -69,13 +69,28 @@ print(verification(x))
 #true
 #justification : on les xi ̸= xj , pour tout 0 ≤ i, j ≤ tels que i ̸= j donc Il existe un unique polynôme d’interpolation
 True
+#d
+def matrice(p):
+    AP = np.zeros((7, p+1)) 
+
+    for i in range(7):
+        for j in range(p+1):
+            AP[i][j] = i*j  
+    
+    return AP
+#2-a
+def inversible(B):
+    T = np.shape(B)
+    test = 0
+
+    if T[0] == T[1]:  # Vérifier si B est carrée
+        if np.linalg.det(B) != 0:  # Tester le déterminant
+            test = 1
+
+    return test
 
 
 
-
-
-
-EXERCICE 2:
 PARTIE II:
 1)a)
 def coefficients(x, y, p):
@@ -95,3 +110,16 @@ def coefficients(x, y, p):
     coefficients = np.dot(np.linalg.inv(tAA), tAy)
     
     return coefficients, A
+	
+	b)
+	def Erreur(x, y, p):
+    Lambda, A = coefficients(x, y, p)
+    error = np.linalg.norm(np.dot(A, Lambda) - y, 2)
+    
+    return error
+	
+	def Erreur(x, y, p):
+    Lambda, A = coefficients(x, y, p)
+    error = np.linalg.norm(np.dot(A, Lambda) - y, 2)
+    
+    return error
