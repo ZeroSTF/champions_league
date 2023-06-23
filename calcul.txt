@@ -69,3 +69,29 @@ print(verification(x))
 #true
 #justification : on les xi ̸= xj , pour tout 0 ≤ i, j ≤ tels que i ̸= j donc Il existe un unique polynôme d’interpolation
 True
+
+
+
+
+
+
+EXERCICE 2:
+PARTIE II:
+1)a)
+def coefficients(x, y, p):
+    n = len(x)
+    A1 = np.ones((n, 1))
+    A2 = np.zeros((n, p))
+    
+    for i in range(p):
+        A2[:, i] = x**(i+1)
+    
+    A = np.concatenate((A1, A2), axis=1)
+    tA = np.transpose(A)
+    tAy = np.dot(tA, y)
+    tAA = np.dot(tA, A)
+    
+    # Calcul des coefficients du polynôme
+    coefficients = np.dot(np.linalg.inv(tAA), tAy)
+    
+    return coefficients, A
