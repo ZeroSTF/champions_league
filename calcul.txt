@@ -143,3 +143,5 @@ Pour p=3 : Erreur d'approximation = 6.656720314646161
 Pour p=4 : Erreur d'approximation = 6.654759547930303
 Pour p=5 : Erreur d'approximation = 6.620685349899857
 Pour p=6 : Erreur d'approximation = 6.619510151778689
+
+2)b) Degré du polynôme : 4
