@@ -93,7 +93,7 @@ def inversible(B):
 	Pour que la matrice soit inversible, il faut que la valeur de p soit supérieure ou égale à 6.
 
 
-
+//////////////////////2)c) yekhdem feya ilyes la7dha tw touselkom////////////////////////////////////////////////////////////
 PARTIE II:
 1)a)
 def coefficients(x, y, p):
