@@ -55,6 +55,17 @@ x5: 10.5
 		
 		Valeur approchée de √50 : 7.07106
 		
-EXERCICE 2:
-PARTIE I:
-1)
+# exercice 2
+#PARTIE 1
+# 1-a
+def verification(z):
+    unique_elements = np.unique(z)
+    return len(unique_elements) == len(z)
+# b
+x = np.array([[91], [271], [451], [530], [631], [721], [800]])
+y = np.array([[41], [89], [97], [89], [67], [73], [2]])
+#c
+print(verification(x))
+#true
+#justification : on les xi ̸= xj , pour tout 0 ≤ i, j ≤ tels que i ̸= j donc Il existe un unique polynôme d’interpolation
+True
