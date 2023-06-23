@@ -1,4 +1,4 @@
-PARTIE I:
+
 1)
 def suite(a, N):
     x0 = a + 1
@@ -26,3 +26,30 @@ x2: 10.499508663874552
 x3: 10.499999046325682
 x4: 10.5
 x5: 10.5
+  
+  
+  b)
+  n_values = np.arange(N + 1)
+  y_values = np.sqrt(a) * np.ones_like(n_values)
+  plt.plot(n_values, x_values, 'bo-', label='Termes de la suite')
+  plt.plot(n_values, y_values, 'r-', label='Droite')
+  
+  
+  (graphe dans l'image dans le dossier)
+  
+  c)
+	la limite est la racine carree de a
+	
+	
+  d)
+		a = 50
+		N = 4
+
+		x_values = suite(a, N)
+		approx_sqrt_50 = x_values[-1]
+
+		print("Valeur approchée de √50 :", approx_sqrt_50)
+		
+		
+		
+		Valeur approchée de √50 : 7.07106
