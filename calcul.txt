@@ -89,6 +89,9 @@ def inversible(B):
 
     return test
 
+#2-b
+	Pour que la matrice soit inversible, il faut que la valeur de p soit supérieure ou égale à 6.
+
 
 
 PARTIE II:
