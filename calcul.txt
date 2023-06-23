@@ -123,3 +123,20 @@ def coefficients(x, y, p):
     error = np.linalg.norm(np.dot(A, Lambda) - y, 2)
     
     return error
+	
+2)a)
+x = [91, 271, 451, 530, 641, 721, 800]
+y = [41, 89, 97, 89, 67, 37, 2]
+
+for p in range(1, 7):
+    error = Erreur(x, y, p)
+    print(f"Erreur d'approximation pour p={p}: {error}")
+	
+	
+	
+	Pour p=1 : Erreur d'approximation = 14.30964535836889
+Pour p=2 : Erreur d'approximation = 13.01776310655184
+Pour p=3 : Erreur d'approximation = 6.656720314646161
+Pour p=4 : Erreur d'approximation = 6.654759547930303
+Pour p=5 : Erreur d'approximation = 6.620685349899857
+Pour p=6 : Erreur d'approximation = 6.619510151778689
